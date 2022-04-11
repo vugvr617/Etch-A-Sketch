@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="etch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="name-div">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="features">
+            <div id="colors-div">
+                <div>
+                    <label for="colorpicker">Pick a color:</label>
+                    <input type="color" id="colorpicker" value="#128C31">
+                </div>
+                <div>
+                    <label for="bg-color">Background color:</label>
+                    <input type="color" id="bg-color" value="#ffffff">
+                </div>
+            </div>
+            <div id="size-div">
+                <h1 id="pixel-display">Choose the size </h1>
+                <input type="range" id="pixel-range" value="1" min="1" max="100">
+            </div>
+            <div id="color-but-div">
+                <button id="chooseColor-but">Choose color</button>
+                <button id="random-but">Random colors</button>
+            </div>
+            <div id="other-props">
+                <button id="erase-but">Erase</button>
+                <button id="clear-but">Clear</button>
+                <button id="backgroundChange-but">Change background</button>
+            </div>
+        </div>
+        <div id="container">
+        </div>
+    </div>
+    <h1>For the best experience, desktop is recommended.</h1>
+    <script src="etch.js"></script>
+    <div id="creator">
+        <p>Created by <span style="color: #000000; font-weight: 700;">Vugar Nasraddinli</span></p>
+        <div id="work-icon">
+            <a href="https://github.com/vugvr617" target="_blank"><i class="fa fa-github"
+                    style="font-size:36px"></i></a>
+            <a href="https://www.linkedin.com/in/vugar-nasraddinli/" target="_blank"><i class="fa fa-linkedin-square"
+                    style="font-size:36px"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

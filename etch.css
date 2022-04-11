@@ -1,0 +1,230 @@
+html{
+    font-size: 10px;
+    font-family: "Quicksand";
+}
+
+body{
+    margin: 0;
+    
+}
+
+#name-div{
+    width: 100%;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#main{
+    width: 100%;
+    max-width: 960px;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr{
+    max-width: 1060px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid; 
+    border-radius: 25px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+label{
+    text-align: center;
+}
+
+#colorpicker{
+    appearance: none;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 20%;
+}
+
+#chooseColor-but{
+    color: white;
+    background-color: rgb(63, 62, 62);
+}
+
+#random-but{
+    background: none;
+}
+
+#bg-color{
+    appearance: none;
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    cursor: pointer;
+    border-color: black;
+    border: none;
+    background-color: transparent;
+    border-radius: 20%;
+}
+
+#colorpicker::-webkit-color-swatch{
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#bg-color::-webkit-color-swatch{
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#colors-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#features{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+#features button{
+    font-family: 'Quicksand';
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#colors-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#size-div {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#other-props{
+    margin-top: -1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#other-props button{
+    margin-top: 1em;
+    padding: 1em 2em;
+    background: none;
+}
+
+#pixel-range{
+    width: 70%;
+}
+
+#container {
+    width: 70%;
+    display: block;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.82);
+}
+
+#color-but-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#color-but-div button{
+    padding: 1em 1.5em;
+}
+
+body h1{
+    text-align: center;
+}
+
+.grid-element {
+    display: grid;
+    gap: 0;
+}
+
+#creator {
+    width: 100%;
+    background-color: rgb(231, 232, 235);
+    min-height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+#creator p {
+    padding-left: 5em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Quicksand";
+}
+
+#work-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 5%;
+    padding-right: 2em;
+    align-items: center;
+}
+
+.fa-github {
+    color: #000000;
+}
+
+.fa-linkedin-square {
+    color: #000000;
+}
+
+
+@media(max-width: 600px){
+    #features{
+        width: 70%;
+        min-height: 500px;
+    }
+
+    #work-icon {
+        padding-right: 2em;
+        width: 20%;
+    }
+
+    #creator {
+        justify-content: space-between;
+    }
+
+    #creator p {
+        padding-left: 0em;
+    }
+
+    #main{
+        flex-direction: column;
+        align-items: center;
+        min-height: 950px;
+    }
+    #container{
+        width: 400px;
+        height: 400px;
+    }
+}
